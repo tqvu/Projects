@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<<< HEAD:Project R/Assets/Scripts/Enemy/BossCasting.cs.meta
+guid: c306df2f89124eb47b3ab035204aded9
+========
+guid: 330fd0fe271ca4d1bb0c15341a523c7b
+>>>>>>>> First-Boss:Project R/Assets/BossBullet.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

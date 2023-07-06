@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aca5f3a6f06fa6e48be75232b49367c9, type: 3}
+  m_Name: 1_Melee
+  m_EditorClassIdentifier: 
+  title: Melee Attack Boost
+  description: Increases melee damage
+  level: 1
+  maxLevel: 2
+  ID: 1
+  enabled: 0
+  baseCost: 200
+  purchasable: 1
+  sprite: {fileID: -995100901, guid: b4171a484f56e3e4496822bc57c0b7d7, type: 3}
+  amount: 1

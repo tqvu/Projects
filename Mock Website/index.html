@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Tyler's Website</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h2 class="logo">Tyler Vu</h2>
+            <nav class="navigation">
+                <button class="buttonHome">Home</button>
+                <button class="buttonAbout">About</button>
+                <button class="buttonContact">Contact</button>
+                <button class="buttonLogin">Login</button>
+            </nav>
+        </header>
+
+        <div class="about">
+            <span class="aboutClose">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <h1>About</h1>
+            <p>Hello, I am Tyler Vu and currently enrolled at University of Houston pursuing a bachelors degree in computer science. I like to eat, play video games, hang out with friends, and play with my dog. Feel free to check out my <a href="Resume T Vu.pdf" target="_blank">resume</a> and recent <a href="https://github.com/tqvu/Projects" target="_blank">projects</a>!</p>
+
+        </div>
+
+        <div class="contact">
+            <span class="contactClose">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <h1>Contact</h1>
+            <p>Email: tqvu29@gmail.com<br><br>
+            LinkedIn: <a href="https://www.linkedin.com/in/tyler-vu1/" target="_blank">https://www.linkedin.com/in/tyler-vu1/</a></p>
+        </div>
+
+
+        <div class="wrapper">
+            <span class="iconClose">
+                <ion-icon name="close"></ion-icon>
+            </span>
+            <div class="formBox login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="submit">Login</button>
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="formBox register">
+                <h2>Register</h2>
+                <form action="#">
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="person"></ion-icon></ion-icon></span>
+                        <input type="text" required>
+                        <label>Username</label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></ion-icon></span>
+                        <input type="email" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="inputBox">
+                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <button type="submit" class="submit">Register</button>
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+
+</html>

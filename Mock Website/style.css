@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Arial", "Sans-serif";
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background: rgb(0, 0, 0, 0.5);
+}
+
+.logo {
+    font-size: 3em;
+    color: white;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+
+.navigation .buttonLogin {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navigation .buttonLogin::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.navigation .buttonLogin:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.buttonAbout {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.buttonAbout::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.buttonAbout:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.buttonContact {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.buttonContact::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.buttonContact:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.contact {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 7px 7px 10px black;
+    display: flex;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.contact.contact-popup {
+    transform: scale(1);
+}
+
+.contact .contactClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.contact h1 {
+    position: absolute;
+    font-size: 5em;
+    
+    color: white;
+    margin: 10px 0 0 43%;
+}
+
+.contact p {
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    margin: 125px 50px 50px 50px;
+}
+
+.contact p a {
+    position: relative;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+}
+
+.navigation .buttonHome {
+    background: transparent;
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navigation .buttonHome::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.navigation .buttonHome:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url("background.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height:475px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 7px 7px 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.about {
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 7px 7px 10px black;
+    display: flex;
+    overflow: hidden;
+    transform: scale(0);
+    transition: transform 0.5s ease;
+}
+
+.about .aboutClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.about h1 {
+    position: absolute;
+    font-size: 5em;
+    
+    color: white;
+    margin: 10px 0 0 43%;
+}
+
+.about p {
+    position: absolute;
+    font-size: 2em;
+    color: white;
+    margin: 125px 50px 50px 50px;
+}
+
+.about p a {
+    position: relative;
+    color: rgb(0, 0, 255);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.about p a:hover {
+    text-decoration: underline;
+}
+
+.about.about-popup {
+    transform: scale(1);
+}
+
+.wrapper.active-popup {
+    transform: scale(1);
+}
+
+.wrapper.active {
+    height: 520px;
+}
+
+.wrapper .formBox {
+    width: 100%;
+    padding: 40px;
+}
+
+.wrapper .formBox.login {
+    transform: translateX(0);
+}
+
+.wrapper.active .formBox.login {
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper.active .formBox.register {
+    transition: none;
+    transform: translateX(0px);
+}
+
+.wrapper .formBox.register {
+    position: absolute;
+    transition: none;
+    transform:  translateX(400px);
+}
+
+.wrapper .iconClose {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.formBox h2 {
+    font-size: 2.5em;
+    text-align: center;
+    padding-bottom: 30px;
+    color: white;
+}
+
+.inputBox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    border-bottom: 2px solid white;
+    margin: 35px 0;
+    font-size: 1.2em;
+}
+
+.inputBox::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.inputBox:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 5px;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+    top: -20px;
+}
+
+
+.inputBox input {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: .75em;
+    padding: 5px 40px 0 5px;
+}
+
+.inputBox .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    bottom: 1px;
+    color: white;
+}
+
+.remember-forgot {
+    font-size: 0.9em;
+    color: white;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot label input {
+    accent-color: gray;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    width: 100%;
+    height: 40px;
+    background: gray;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.login-register {
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 50px 0 10px;
+}
+
+.login-register a {
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
