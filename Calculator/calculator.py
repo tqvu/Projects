@@ -32,7 +32,7 @@ def clear():
 
 window = Tk()
 window.title("Calculator")
-window.geometry("400x530")
+window.geometry("500x630")
 window.configure(bg="black")
 
 equation_string = ""
