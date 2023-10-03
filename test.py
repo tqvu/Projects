@@ -1,5 +1,3 @@
-heros=['spider man','thor','hulk','iron man','captain america']
+import random
 
-s = "hello there"
-for i in s:
-    print(i + 1)
+print(random.randint(1,10))
